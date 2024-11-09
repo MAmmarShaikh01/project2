@@ -10,7 +10,7 @@ const Header: React.FC = () => {
           <Link href="/" >My Portfolio</Link>
         </h1>
 
-        <nav className="flex flex-row gap-8">
+        <nav className="flex flex-row gap-4 md:gap-8">
           <Link href="/" className=" text-gray-100 no-underline font-medium transition-colors duration-300 ease-in hover:text-pink-500">Home</Link>
           <Link href="/about" className="text-gray-100 no-underline font-medium transition-colors duration-300 ease-in hover:text-pink-500">About</Link>
           <Link href="/contact" className="text-gray-100 no-underline font-medium transition-colors duration-300 ease-in hover:text-pink-500">Contact</Link>
