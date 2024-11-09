@@ -1,29 +1,45 @@
 // components/Footer.tsx
 import Link from 'next/link';
-import styles from '../css/Footer.module.css';
 
 const Footer: React.FC = () => {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.container}>
-        <div className={styles.logo}>
+    <footer className="bg-gray-800 text-gray-100 py-8 text-center">
+      <div className="max-w-screen-xl mx-auto px-4 flex flex-col items-center gap-6 md:flex-row md:justify-between">
+        
+        {/* Logo Section */}
+        <div className="text-xl font-bold text-pink-500">
           <Link href="/">My Portfolio</Link>
         </div>
 
-        <div className={styles.links}>
-          <Link href="/about" className={styles.link}>About</Link>
-          <Link href="/contact" className={styles.link}>Contact</Link>
-          <Link href="/privacy-policy" className={styles.link}>Privacy Policy</Link>
+        {/* Footer Links */}
+        <div className="flex gap-6">
+          <Link href="/" className="text-gray-100 no-underline font-medium transition-colors duration-300 ease-in hover:text-pink-500">
+            Home
+          </Link>
+          <Link href="/about" className="text-gray-100 no-underline font-medium transition-colors duration-300 ease-in hover:text-pink-500">
+            About
+          </Link>
+          <Link href="/contact" className="text-gray-100 no-underline font-medium transition-colors duration-300 ease-in hover:text-pink-500">
+            Contact
+          </Link>
         </div>
 
-        <div className={styles.socials}>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>Twitter</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>LinkedIn</a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>GitHub</a>
+        {/* Social Icons */}
+        <div className="flex gap-4">
+          <Link href="https://twitter.com" className="text-gray-100 transition-colors duration-300 ease-in hover:text-pink-500">
+            Twitter
+          </Link>
+          <Link href="https://linkedin.com" className="text-gray-100 transition-colors duration-300 ease-in hover:text-pink-500">
+            LinkedIn
+          </Link>
+          <Link href="https://github.com" className="text-gray-100 transition-colors duration-300 ease-in hover:text-pink-500">
+            GitHub
+          </Link>
         </div>
-
-        <p className={styles.copyright}>© 2024 My Portfolio. All rights reserved.</p>
       </div>
+
+      {/* Copyright Section */}
+      <p className="mt-8 text-sm text-gray-400">© 2024 My Portfolio. All rights reserved.</p>
     </footer>
   );
 };
