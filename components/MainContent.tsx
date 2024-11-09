@@ -1,13 +1,12 @@
 // components/MainContent.jsx
 import React from 'react';
-import styles from '../css/MainContent.module.css';
 
 const MainContent = () => {
   return (
     <main className="font-sans p-8">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-pink-500 to-orange-300 text-white text-center p-16 rounded-lg mb-8">
-        <div className={styles.heroText}>
+        <div>
           <h1 className='text-4xl m-'>Welcome to My Portfolio</h1>
           <p className='text-lg mt-4'>Crafting beautiful, responsive, and performant websites tailored to your needs.</p>
         </div>
@@ -15,7 +14,7 @@ const MainContent = () => {
 
       {/* About Section */}
       <section className="text-center my-8">
-        <h2 className='text-2xl'>About Me</h2>
+        <h2 className='text-4xl my-9'>About Me</h2>
         <p className='max-w-3xl mx-auto text-lg text-gray-600'>
           I am a passionate web developer with experience in creating functional and visually appealing
           websites. My goal is to bring your ideas to life in the digital world with clean, modern designs.
