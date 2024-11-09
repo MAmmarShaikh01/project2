@@ -12,10 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         animation: {
-          fadeIn: 'fadeIn 1.5s ease-in-out',
+          fadeInUp: 'fadeInUp 1.5s ease-in-out',
         },
         keyframes: {
-          fadeIn: {
+          fadeInUp: {
             '0%': { opacity: '0', transform: 'translateY(20px)' },
             '100%': { opacity: '1', transform: 'translateY(0)' },
           },
